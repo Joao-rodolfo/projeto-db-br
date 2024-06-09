@@ -37,6 +37,19 @@ function esconderCartaoSelecionado() {
     const cartaoSelecionado = document.querySelector(".selecionado");
     cartaoSelecionado.classList.remove("selecionado");
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Função para alternar o fundo
+    function alternarFundo() {
+        document.body.classList.toggle('fundo-alternativo');
+    }
+
+    // Alterna o fundo a cada 10 segundos (10000 milissegundos)
+    setInterval(alternarFundo, 10000);
+});
+
+
+
 // OBJETIVO 1 - quando clicarmos na seta de avançar temos que mostrar o proximo 
 // cartao da lista
   

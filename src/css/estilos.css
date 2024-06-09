@@ -1,14 +1,25 @@
-body {
+body {    
     font-family: 'Outfit', sans-serif;
-    background-image: url('../imagens/fundo-base.jpg');
+    background-image: url('../imagens/fundo-base1.png');
     background-repeat: no-repeat;
     background-size: cover;
+    transition: background-image 0.5s ease-in-out;
     min-height: 100vh;
 }
 
+body.fundo-alternativo {
+    background-image: url('../imagens/fundo-base2.png');
+}
+
+h1, h3.titulo {
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Contorno preto */
+}
+
+
 .cabecalho {
     text-align: center;
-    padding: 60px 0;
+    padding: 100px 0;
 }
 
 .cabecalho  h1 {
